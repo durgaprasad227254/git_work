@@ -1,0 +1,64 @@
+Prasad@2025@
+durgaprasad227254@outlook.com
+dp227143@gmail.com
+kdurgaprasad227254@gmail.com---Google cloud
+hub.docker username--durgaprasad227
+docker login -u durgaprasad227 
+Prasad@2025@
+
+docker run --name mydb -e POSTGRES_PASSWORD=rainbow -e POSTGRES_USER=durgaprasad -e POSTGRES_DB=mydb1 -d postgres
+
+Lamp Architecture:
+==========
+mysql--docker run --name mydb -d -e MYSQL_ROOT_PASSWORD=rainbow mysql
+apache(httpd)--
+php
+
+apt update -y
+apt install -y software-properties-common
+apt install -y ansible
+
+FROM ubuntu
+MAINTAINER durgaprasad
+workdir /root
+
+copy get-docker.sh .
+run sh install.sh
+c1 10.0.0.2
+c2 10.0.0.3
+c3 10.1.0.2
+
+/var/lib/docker/volumes/27281892f299786382468cac5e9c895031cefc3d515cac6f18fa0f6a10a29bba/_data
+============
+
+5 To create cluster on EKS
+  eksctl create cluster \
+    --region us-east-2 \
+  --node-type t3.medium \
+  --nodes 3 \
+  --name mynew-cluster3
+  
+  
+gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project genial-motif-471609-c8
+gcloud container clusters describe cluster-1 --zone us-central1-a --format="value(privateClusterConfig)"
+gcloud container clusters describe cluster-1 --zone us-central1-a --format="value(masterAuthorizedNetworksConfig)"
+
+curl -s ifconfig.me
+kdurgaprasad227254@cloudshell:~/k8s (genial-motif-471609-c8)$ curl -s ifconfig.me
+34.87.166.234kdurgaprasad227254@cloudshell:~/k8s (genial-motif-471609-c8)$ 
+
+gcloud container clusters update cluster-1 \
+  --zone us-central1-a \
+  --enable-master-authorized-networks \
+  --master-authorized-networks 34.87.166.234/32
+
+--master-authorized-networks 34.45.129.172/32,34.132.7.194/32
+
+34.87.166.234
+
+gcloud container clusters update cluster-1 \
+  --zone us-central1-a \
+  --enable-master-authorized-networks \
+  --master-authorized-networks $(34.87.166.234)/32
+
+gcloud config set project prasad-123-472209
